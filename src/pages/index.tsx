@@ -1,5 +1,3 @@
-import { useRouter } from 'next/router';
-
 import Hero from '@/components/Hero';
 import Work from '@/components/Work';
 import { Meta } from '@/layout/Meta';
@@ -7,8 +5,6 @@ import { Main } from '@/templates/Main';
 import  Project  from "@/components/Project";
 import AllProjects from  "@/components/AllProjects";
 const Index = () => {
-  const router = useRouter();
-
   return (
     <Main
       meta={

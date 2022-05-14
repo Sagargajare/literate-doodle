@@ -3,6 +3,7 @@ import React from "react";
 type Props = {};
 
 const AllProjects = (props: Props) => {
+  console.log(props);
   return (
     <div className="mx-auto max-w-6xl ">
       <div>
@@ -14,11 +15,11 @@ const AllProjects = (props: Props) => {
         <div className="container mx-auto ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[0, 1, 2, 3, 4, 5].map((i) => (
-              <div
-                key={i}
-                
-              >
-               <img className="p-5 rounded-sm" src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5faaf2643ab9e4775b5dbf81_metta-good-shopify-design-opt.jpg"/>
+              <div key={i}>
+                <img
+                  className="p-5 rounded-sm"
+                  src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5faaf2643ab9e4775b5dbf81_metta-good-shopify-design-opt.jpg"
+                />
               </div>
             ))}
           </div>
@@ -26,9 +27,9 @@ const AllProjects = (props: Props) => {
       </div>
       <div>
         <div className="text-center my-12">
-       
-            <a className="font-hind font-bold leading-9 text-[#ea4c89] p-5 border-solid border-1 border-[#ea4c89]-600 rounded-sm">View My Github</a>
-         
+          <a className="font-hind font-bold  text-[#ea4c89] px-6 py-4 border-solid border  border-[#ffc2c3] rounded-sm text-base leading-10 shadow-sm">
+            View My Github
+          </a>
         </div>
       </div>
     </div>

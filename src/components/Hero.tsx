@@ -9,6 +9,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const lazyRoot = React.useRef(null);
+  console.log(props);
   return (
     <div className="mx-auto max-w-6xl">
       <div className="flex flex-col  lg:flex-row py-10  h-full">
