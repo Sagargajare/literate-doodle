@@ -4,6 +4,8 @@ import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 import  Project  from "@/components/Project";
 import AllProjects from  "@/components/AllProjects";
+import AboutMe from '@/components/AboutMe';
+import Certified from '@/components/Certified';
 const Index = () => {
   return (
     <Main
@@ -17,7 +19,9 @@ const Index = () => {
       <Hero />
       <Work/>
       <Project/>
-      <AllProjects/>
+      <AllProjects />
+      <AboutMe />
+      <Certified/>
     </Main>
   );
 };
